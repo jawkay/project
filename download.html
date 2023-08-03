@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        .fo{
+            width: 140px;
+            height: 50px;
+            border: 1.5px solid black;
+            border-radius: 20px;
+            background-color: rgb(26, 160, 68);
+        }
+        .you{
+            width: 140px;
+            height: 50px;
+            border: 1.5px solid black;
+            border-radius: 20px;
+            background-color: rgb(26, 160, 68);
+            margin-top: 50px;
+        }
+        .uo{
+            width: 60%;
+            height: 50px;
+            border: 1.5px solid black;
+            border-radius: 20px;
+            background-color: rgb(26, 160, 68);
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .so{
+            width: 250px;
+            height: 50px;
+            border: 1.5px solid black;
+            border-radius: 20px;
+            background-color: rgb(26, 160, 68);
+            margin-top: 30px;
+        }
+        .of{
+            border-radius: 80%;
+            background-color: rgb(26, 160, 68);
+            width: 40px;
+            height: 40px;
+            border: 1.5px solid black;
+        }
+        .re{
+            background-color: rgba(223, 255, 220, 0.776);
+            position: sticky;
+            top: 0px;
+        }
+        .gy{
+            padding: 50px;
+            padding-left: 0px;
+            background: rgba(223, 255, 219, 0.758);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .this{
+            width: 35%;
+        }
+        .smae{
+            background: rgba(223, 255, 219, 0.772);
+            width: 100%;
+            padding-bottom: 20px;
+        }
+        .first{
+            background: rgb(4, 6, 20);
+            width: 250px;
+            color: white;
+            text-align: center;
+            height: 350px;
+            border-radius: 30px;
+            padding: 20px;
+            margin-left: 10px;
+        }
+        .first:hover{
+            color: rgb(4, 6, 20) ;
+            background: rgb(26, 160, 68);
+        }
+        .ard{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(223, 255, 220);
+            border: none;
+            border-radius: none;
+        }
+        .but{
+            margin-top: 60px;
+        }
+        .bat{
+            margin-top: 45px;
+        }
+        .then{
+            display: flex; flex-direction: row; justify-content: space-around;
+            padding-top: 60px; 
+            background-color: white;
+            border-radius: 0px 0px 40px 40px;
+            
+        }
+        .caro{
+            height: 300px; width: 400px; border-radius: 20px;
+        }
+        .bra{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .gui{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @media screen and (min-width:1024px) {
+            .soft{
+                display: block;
+            }
+        }
+        @media screen and (max-width:768px) { 
+            .caro{
+                height: 200px;
+                width: 300px;
+            } 
+            .fo{
+                display: none;
+            }
+            .soft{
+                display: block;
+            } 
+            .we{
+                background: black;
+                color: green;
+                text-align: center;
+                height: 300px;
+                margin-left: 0px;
+            }   
+            .gy{
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+            }
+            .this{
+                width: 50%
+            }
+            .ard{
+                display: flex;
+                flex-direction: column;
+            }
+            .first{
+                margin-top: 10px;
+                height: 250px;
+            }
+            .but{
+                margin-top: 10px;
+            }
+            .bat{
+                margin-top: 10px;
+            }
+            .then{
+                display: flex;
+                flex-direction: column;
+                border-radius: 0px 0px 10px 10px;
+            }
+            .bra{
+                display: none;
+            }
+            .off{
+                display: none;
+            }
+            .hat{
+                background-color: white;
+                font-size: 30px;
+                border: 10px solid white;
+            }
+            .girl{
+                background-color: black;
+                height: 300px;
+            }
+            .pot{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .of{
+                display: none;
+            }
+            .we{
+                display: none;
+
+            }
+            h1{
+                font-size: 50px;
+            }
+            .soft{
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg lof re" >
+        <div class="container">
+            <div>
+                <a class="navbar-toggler fr" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+            </div>
+          <div>
+           <a href="download.html"> <img src="download.png" height="50px"></a>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: white;">
+            <div class="offcanvas-header" style="background-color: white;">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <img src="off.png" height="30px" style="margin-right: 110px;">
+            </div>
+            <div class="offcanvas-body girl">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 hat" style="margin-left: 0px;">
+              <li class="nav-item dropdown">
+                    <a class="nav-link  vt" data-bs-toggle="drop" href="swift.html">Swift <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Internet</a></li>
+                        <li><a class="dropdown-item" href="#">Inter-Branch</a></li>
+                        <li><a class="dropdown-item" href="#">Microwave Internet</a></li>
+                    </ul>
+              </li> <hr>
+              <li class="nav-item">
+                <a class="nav-link vt" href="cac.html">CAC</a>
+              </li> <hr>
+              <li class="nav-item">
+                <a class="nav-link vt" href="simplified.html" >Simplified</a>
+              </li> <hr>
+              <li class="nav-item">
+                <a class="nav-link vt" href="whatsapp.html">Whatsapp</a>
+              </li> <hr>
+              <li class="nav-item">
+                <a class="nav-link vt" href="#">Explore</a>
+              </li> <hr>
+              <li class="nav-item">
+                <a class="nav-link vt" href="download.html">Download</a>
+              </li> <hr>
+              <li class="nav-item">
+                <a class="nav-link vt" href="whogohost.html">Whogohost</a>
+              </li> <hr>
+              <li class="nav-item">
+                <a class="nav-link vt" href="valuemax.html">Valuemax</a>
+              </li>
+            </ul> <br> <br> 
+                <div class="we">
+                    <button class="so"> <span class="download">Download</span> <i class="fa fa-arrow-down"></i></button> <br> <br> <hr>
+                    <a href="#" style="font-size: 40px; color: white; margin-right: 5px;"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" style="font-size: 40px; color: green; margin-right: 5px;"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#" style="font-size: 40px; color:white; margin-right: 5px;"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" style="font-size: 40px; color: green; margin-right: 5px;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="font-size: 40px; color: white; margin-right: 5px;"><i class="fa-brands fa-linkedin"></i></a> <br> <br> <hr>
+                    <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: baseline;">
+                        <div >
+                            <a href="#" style="text-decoration: none; color: white;">Terms of Condition</a> <br>
+                        </div>
+                        <div>
+                            <div>
+                                <button style="width: 150px; height: 50px; border: 2px solid white; background: rgb(17, 17, 27); color: white; word-spacing: 60px; border-radius: 40px;">English <i class="fa fa-angle-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div>
+            <button  class="fo"> <span class="download">Download</span> <i class="fa fa-arrow-down"></i></button>
+            <button  class="of"> <span class="download"></span> <i class="fa fa-arrow-down"></i></button>
+        </div>
+        </div>
+    </nav>
+    <div class="smae">
+        <div class="gy">
+            <div>
+               <h1>
+                Download <br>
+                WhatsApp
+               </h1>
+            </div>
+            <div class="this">
+                Stay connected on WhatsApp across your devices, so  you can pick up any conversation where you left off.
+                <p style="font-size: 10px; margin-top: 20px;">By installing WhatsApp, you agree to our <a href="#" style=" color: black;">Terms</a> & <a href="#" style=" color: black;">Private Policy.</a></p>
+            </div>
+        </div>
+        <div class="ard">
+            <div class="first">
+                <p style="font-size: 12px;">Mobile and Tablet</p>
+                <h1>Android</h1>
+                <p style="font-size: 12px;">Minimum Requirements (Version 2.23.7.14) Android OS 4.1 or above</p>
+                <img src="play.png" height="50px" style="border-radius: 10px; border: 2px solid white ; " class="but">
+            </div>
+            <div class="first">
+                <p style="font-size: 12px;">Mobile</p>
+                <h1>iOS</h1>
+                <p style="font-size: 12px;">Minimum Requirements (Version 22.13.74) Requires iOS 12.0 or newer</p>
+                <img src="app.png" height="50px" style="border-radius: 10px; border: 2px solid white ;" class="but">
+            </div>
+            <div class="first">
+                <p style="font-size: 12px;">Desktop</p>
+                <h1>Windows</h1>
+                <p style="font-size: 12px;">Requires Windows 10 or newer. For all other operating systems, you can use WhatsApp Web in your browser</p>
+                <img src="micro.png" height="50px" style=" border: 2px solid white ; " class="bat">
+            </div>
+        </div>
+        <h6 style="text-align: center; margin-top: 30px;">Visit <a href="#" style="color: black;"> whatsapp.com/dl </a> on your mobile phone to install</h6>
+    </div>
+    <div style="background: rgb(21, 21, 28);">
+    <div class="then">
+        <div>
+            <div>
+                <h1>Already <br>downloaded?</h1>
+                <p>Learn more about what you can do on WhatsApp.</p>
+            </div>
+        </div>
+        <div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="1.png"  alt="..."  class="caro">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                    <h3>Message <br> privately</h3>
+                      <p style="border-bottom: 3px solid green; width: 100px">Learn more <i class=" fa fa-angle-right"></i></p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="2.png" alt="..."   class="caro">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                    <h3>Stay Connected </h3>
+                      <p style="border-bottom: 3px solid green; width: 100px">Learn More <i class=" fa fa-angle-right"></i></p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="3.png"  alt="..."  class="caro">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                    <h3>Build Community</h3>
+                    <p style="border-bottom: 3px solid green; width: 100px">Learn More <i class=" fa fa-angle-right"></i></p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+    </div>
+    <div style="background: rgb(21, 21, 28); padding-top: 50px;">
+        <div class="container off">
+            <div class="row ">
+            <div class="col-sm-4">
+                <img src="downapp.png" height="50px"> <br> <br> <br>
+                <button  class="you"> <span class="download">Download</span> <i class="fa fa-arrow-down"></i></button>
+            </div>
+            <div class="col-sm-2">
+               <p style="font-size: 12px; color: white;">What we do</p> <br>
+              <p>  <a href="" style="color: white; font-size: 20px; text-decoration: none;"> Features</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Blog</a> </p>
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;"> Security</a> </p>
+                <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">For Business</a> </p>
+            </div>
+            <div class="col-sm-2">
+                <p style="font-size: 12px; color: white;">Who we are</p> <br>
+                <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">About Us</a> </p> 
+                <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Careers</a> </p> 
+               <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Brand Center</a> </p> 
+                <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Privacy</a>
+            </div>
+            <div class="col-sm-2">
+                <p style="font-size: 12px; color: white;">Use WhatsApp</p> <br>
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Android</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">iPhone</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Mac/PC</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">WhatsApp Web</a> </p>
+            </div> 
+            <div class="col-sm-2">
+                <p style="font-size: 12px; color: white;">Need help ?</p> <br>
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Contact Us</a> </p> 
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Help Center</a> </p> 
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Corona-Vireus</a> </p> 
+                 <a href="" style="color: white; font-size: 20px; text-decoration: none;">Security</a>
+            </div> 
+            <div style="color: green; " class="pot">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <p style="color: white;">2023 © WhatsApp LLC</p>
+            </div>
+            <div class="col-sm-2">
+                <p><a href="#" style="text-decoration: none; color: white;">Terms of Condition</a></p>
+            </div>
+            <div class="col-sm-4 bra">
+                <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div> 
+            <div class="col-sm-4">
+                <button style="width: 250px; height: 60px; border: 2px solid white; background: rgb(17, 17, 27); color: white; word-spacing: 60px; border-radius: 40px;">English <i class="fa fa-angle-down"></i></button>
+            </div>
+        </div>
+     </div>
+       <div class="soft">
+        <button  class="uo"> <span class="download">Download</span> <i class="fa fa-arrow-down"></i></button> <div style="color: green;"><hr></div>
+        <div class="gui">
+            <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div style="border-radius: 100%; height: 50px; width: 50px; background: black; color: white; border: 1px solid white; text-align: center; font-size: 30px;">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div> <div style="color: green;"><hr></div>
+        <div style="margin-bottom: 10px;">
+            <img src="downapp.png" height="50px">
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div>
+                <p style="font-size: 12px; color: white;">What we do</p> <br>
+               <p>  <a href="" style="color: white; font-size: 20px; text-decoration: none;"> Features</a> </p> 
+                 <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Blog</a> </p>
+                 <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;"> Security</a> </p>
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">For Business</a> </p>
+             </div>
+             <div>
+                 <p style="font-size: 12px; color: white;">Who we are</p> <br>
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">About Us</a> </p> 
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Careers</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Brand Center</a> </p> 
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Privacy</a>
+            </div> 
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div >
+                <p style="font-size: 12px; color: white;">Use WhatsApp</p> <br>
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Android</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">iPhone</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Mac/PC</a> </p> 
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">WhatsApp Web</a> </p>
+            </div> 
+            <div>
+                <p style="font-size: 12px; color: white;">Need help ?</p> <br>
+                <p> <a href="" style="color: white; font-size: 20px; text-decoration: none;">Contact Us</a> </p> 
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Help Center</a> </p> 
+                 <p><a href="" style="color: white; font-size: 20px; text-decoration: none;">Corona-Vireus</a> </p> 
+                 <a href="" style="color: white; font-size: 20px; text-decoration: none;">Security</a>
+            </div> 
+        </div><div style="color: green;"><hr></div>
+        <div style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div >
+                <a href="#" style="text-decoration: none; color: white;">Terms of Condition</a> <br>
+                <span style="color: white;"> 2023 © WhatsApp LLC </span>
+            </div>
+            <div>
+                <div>
+                    <button style="width: 150px; height: 50px; border: 2px solid white; background: rgb(17, 17, 27); color: white; word-spacing: 60px; border-radius: 40px;">English <i class="fa fa-angle-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p style="color: red; text-align: center;">CAVEAT: THIS IS STUDENT PROJECT SOLELY FOR LEARNING AND PRACTICE PURPOSE, AND NOT AN ATTEMPT TO CLONE THE EXISTING PAGE</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>     
+</body>
+</html>

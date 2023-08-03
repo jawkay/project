@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: rgb(44, 140, 124);
+            align-items: baseline;
+            height: 60px;
+            padding-top: 5px;
+        }
+        .special{
+                display: flex;
+                flex-direction: row;
+            }
+            .sear{
+                background: rgb(236, 236, 236); border-radius: 100%; height: 40px; width: 40px; text-align: center; margin-right: 10px;
+            }
+            .sear:hover{
+                background: rgb(214, 214, 214);
+                cursor: pointer;
+            }
+            .ba{
+                background: rgb(236, 236, 236); border-radius: 100%; height: 40px; width: 40px; text-align: center; margin-right: 10px;
+            }
+            .ba:hover{
+                background: rgb(214, 214, 214);
+                cursor: pointer;
+            }  
+            .wait{
+          font-size: 20px; margin-top: 10px; color:rgb(44, 140, 124); background: rgb(224, 224, 224); padding: 8px 10px 8px 10px; border-radius: 100%;
+        }  
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div>
+           <a href="whatsapp.html"> <img src="whtasapp.png" height="50px" style="margin-left: 30px;"></a>
+        </div>
+        <div class="special">
+            <div class="sear">
+                <a href="search.html" style="color: black;"><i class=" fa fa-light fa-magnifying-glass" style="font-size: 20px; margin-top: 10px;"></i></a>
+            </div>
+            <div>
+                <div class="ba">
+                    <a href="wat.html"><i class=" fa fa-bars" style="font-size: 20px; margin-top: 10px; color: black;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> <br> <br>
+
+    <input class="form-control" list="datalistOptions" style="height: 60px; background-color: rgb(237, 237, 237);" id="exampleDataList" placeholder=" Search help article...">
+    <datalist id="datalistOptions">
+      <option value="About Our banc">
+      <option value="Download">
+      <option value="About our Service">
+      <option value="Customer Care">
+      <option value="About Privacy etc">
+    </datalist> <br>
+    <div class="ode">
+        <div class="accordion accordion" id="accordionFlushExample" style="max-height: 600px; min-height: 600px;" >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <div class="wait">
+                  <i class=" fa-sharp fa-solid fa-flag"></i>
+                </div> <h6 style="margin-left: 20px; margin-top: 15px;">Get Started</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <div class="accordion-item 2">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseWne" aria-expanded="false" aria-controls="flush-collapseWne">
+                          <div class="wait">
+                            <i class=" fa-sharp fa-solid fa-download"></i>
+                        </div> <h6 style="margin-left: 20px; margin-top: 15px;">Download & Installation</h6>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseWne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                        <di<ul>
+                          <li class="nav-item">
+                                <a class="nav-link  vt"  href="swift.html">Swift </a>
+                          </li> <hr>
+                          <li class="nav-item">
+                            <a class="nav-link vt" href="cac.html">CAC</a>
+                          </li> <hr>
+                          <li class="nav-item">
+                            <a class="nav-link vt" href="simplified.html" >Simplified</a>
+                          </li> <hr>
+                          <li class="nav-item">
+                            <a class="nav-link vt" href="whatsapp.html">Whatsapp</a>
+                          </li> <hr>
+                          <li class="nav-item">
+                            <a class="nav-link vt" href="explore.html">Explore</a>
+                          </li> <hr>
+                          <li class="nav-item">
+                            <a class="nav-link vt" href="download.html">Download</a>
+                          </li> <hr>
+                          <li class="nav-item">
+                            <a class="nav-link vt" href="whogohost.html">Whogohost</a>
+                          </li> <hr>
+                          <li class="nav-item">
+                            <a class="nav-link vt" href="valuemax.html">Valuemax</a>
+                          </li>
+                        </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEwo" aria-expanded="false" aria-controls="flush-collapseEwo">
+                          <div class="wait">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div> <h6 style="margin-left: 20px; margin-top: 15px;"> Registration</h6>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseEwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                        <div class="accordion-body"><p>How to Login</p>
+                          <p>How to Download</p>
+                          <p>How to Uninstall</p>
+                          <p>About supported devices</p>
+                          <p>About Desktop</p>
+                          <p>How to Play</p>
+                          <p>How to code</p>
+                          <p>Traning</p></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsehree" aria-expanded="false" aria-controls="flush-collapsehree">
+                          <div class="wait">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </div> <h6 style="margin-left: 20px; margin-top: 15px;">  Trouble Shotting</h6>
+                        </button>
+                      </h2>
+                      <div id="flush-collapsehree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                        <div class="accordion-body"><p>How to Login</p>
+                          <p>How to Download</p>
+                          <p>How to Uninstall</p>
+                          <p>About supported devices</p>
+                          <p>About Desktop</p>
+                          <p>How to Play</p>
+                          <p>How to code</p>
+                          <p>Traning</p></div>
+                    </div>
+                  </div></div>
+              </div>
+            </div> 
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <div class="wait">
+                    <i class="fa-regular fa-comments"></i>
+              </div> <h6 style="margin-left: 20px; margin-top: 15px;">Chat</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="accordion accordion-flush" id="accordionFlushExample3">
+                  <div class="accordion-item 3">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsety" aria-expanded="false" aria-controls="flush-collapsety">
+                        <div class="wait">
+                          <i class="fa-sharp fa-solid fa-photo-film"></i>
+                      </div> <h6 style="margin-left: 20px; margin-top: 15px;">Media</h6>
+                      </button>
+                    </h2>
+                    <div id="flush-collapsety" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+                      <div class="accordion-body">
+                          <p>How to Login</p>
+                          <p>How to Download</p>
+                          <p>How to Uninstall</p>
+                          <p>About supported devices</p>
+                          <p>About Desktop</p>
+                          <p>How to Play</p>
+                          <p>How to code</p>
+                          <p>Traning</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseo" aria-expanded="false" aria-controls="flush-collapseo">
+                        <div class="wait">
+                          <i class="fa-sharp fa-solid fa-bell"></i>
+                      </div> <h6 style="margin-left: 20px; margin-top: 15px;"> Notification</h6>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+                      <div class="accordion-body"><p>How to Login</p>
+                        <p>How to Download</p>
+                        <p>How to Uninstall</p>
+                        <p>About supported devices</p>
+                        <p>About Desktop</p>
+                        <p>How to Play</p>
+                        <p>How to code</p>
+                        <p>Traning</p></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsee" aria-expanded="false" aria-controls="flush-collapsee">
+                        <div class="wait">
+                          <i class="fa-solid fa-microphone"></i>
+                      </div> <h6 style="margin-left: 20px; margin-top: 15px;">  Voice Messages</h6>
+                      </button>
+                    </h2>
+                    <div id="flush-collapsee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+                      <div class="accordion-body"><p>How to Login</p>
+                        <p>How to Download</p>
+                        <p>How to Uninstall</p>
+                        <p>About supported devices</p>
+                        <p>About Desktop</p>
+                        <p>How to Play</p>
+                        <p>How to code</p>
+                        <p>Traning</p></div>
+                  </div>
+                </div></div>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <div class="wait">
+                    <i class="fa-solid fa-phone"></i>
+              </div> <h6 style="margin-left: 20px; margin-top: 15px;">Voice and Video Call</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">          <div class="accordion accordion-flush" id="accordionFlushExample4">
+                  <div class="accordion-item 4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsey" aria-expanded="false" aria-controls="flush-collapsey">
+                        <div class="wait">
+                          <i class="fa-sharp fa-solid fa-photo-film"></i>
+                      </div> <h6 style="margin-left: 20px; margin-top: 15px;">Media</h6>
+                      </button>
+                    </h2>
+                    <div id="flush-collapsey" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample4">
+                      <div class="accordion-body">
+                          <p>How to Login</p>
+                          <p>How to Download</p>
+                          <p>How to Uninstall</p>
+                          <p>About supported devices</p>
+                          <p>About Desktop</p>
+                          <p>How to Play</p>
+                          <p>How to code</p>
+                          <p>Traning</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseok" aria-expanded="false" aria-controls="flush-collapseok">
+                        <div class="wait">
+                          <i class="fa-sharp fa-solid fa-bell"></i>
+                      </div> <h6 style="margin-left: 20px; margin-top: 15px;"> Notification</h6>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseok" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample4">
+                      <div class="accordion-body"><p>How to Login</p>
+                        <p>How to Download</p>
+                        <p>How to Uninstall</p>
+                        <p>About supported devices</p>
+                        <p>About Desktop</p>
+                        <p>How to Play</p>
+                        <p>How to code</p>
+                        <p>Traning</p></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseop" aria-expanded="false" aria-controls="flush-collapseop">
+                        <div class="wait">
+                          <i class="fa-solid fa-microphone"></i>
+                      </div> <h6 style="margin-left: 20px; margin-top: 15px;">  Voice Messages</h6>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseop" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample4">
+                      <div class="accordion-body"><p>How to Login</p>
+                        <p>How to Download</p>
+                        <p>How to Uninstall</p>
+                        <p>About supported devices</p>
+                        <p>About Desktop</p>
+                        <p>How to Play</p>
+                        <p>How to code</p>
+                        <p>Traning</p></div>
+                  </div>
+                </div></div></div>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <div class="wait">
+                      <i class="fa-solid fa-users"></i>
+              </div> <h6 style="margin-left: 20px; margin-top: 15px;">Communities</h6>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> <p>How to Login</p>
+                    <p>How to Download</p>
+                    <p>How to Uninstall</p>
+                    <p>About supported devices</p>
+                    <p>About Desktop</p>
+                    <p>How to Play</p>
+                    <p>How to code</p>
+                    <p>Traning</p></div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                     <div class="wait">
+                      <i class="fa-brands fa-whatsapp"></i>
+              </div> <h6 style="margin-left: 20px; margin-top: 15px;">Whatsapp Business</h6>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> <p>How to Login</p>
+                    <p>How to Download</p>
+                    <p>How to Uninstall</p>
+                    <p>About supported devices</p>
+                    <p>About Desktop</p>
+                    <p>How to Play</p>
+                    <p>How to code</p>
+                    <p>Traning</p></div>
+                </div>
+            </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                   <div class="wait">
+                    <i class="fa-regular fa-credit-card"></i>
+              </div> <h6 style="margin-left: 20px; margin-top: 15px;">Payment</h6>
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> <p>How to Login</p>
+                    <p>How to Download</p>
+                    <p>How to Uninstall</p>
+                    <p>About supported devices</p>
+                    <p>About Desktop</p>
+                    <p>How to Play</p>
+                    <p>How to code</p>
+                    <p>Traning</p></div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                     <div class="wait">
+                      <i class="fa-sharp fa-solid fa-lock"></i>
+              </div> <h6 style="margin-left: 20px; margin-top: 15px;">Privacy, Safety, Padlock</h6>
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> <p>How to Login</p>
+                    <p>How to Download</p>
+                    <p>How to Uninstall</p>
+                    <p>About supported devices</p>
+                    <p>About Desktop</p>
+                    <p>How to Play</p>
+                    <p>How to code</p>
+                    <p>Traning</p></div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    <div class="wait">
+                      <i class="fa-solid fa-user"></i>
+              </div> <h6 style="margin-left: 20px; margin-top: 15px;">Account and Account Banc</h6>
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> <p>How to Login</p>
+                    <p>How to Download</p>
+                    <p>How to Uninstall</p>
+                    <p>About supported devices</p>
+                    <p>About Desktop</p>
+                    <p>How to Play</p>
+                    <p>How to code</p>
+                    <p>Traning</p></div>
+                </div>
+              </div>
+              
+          </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">  
+</script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .james {
+            background-color: rgb(14, 65, 132);
+            padding-top: 20px;
+            color: white;
+            padding-bottom: 20px;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .down {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 50%;
+        }
+
+        .loans {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .second {
+            margin-top: 200px;
+        }
+
+        .bus {
+            background: white;
+            height: 250px;
+            padding: 20px 20px 30px 20px;
+            border-radius: 5px;
+            margin-right: 30px;
+            box-shadow: 3px 3px 10px rgb(186, 185, 185);
+        }
+
+        ul {
+            max-height: 20%;
+
+        }
+
+        .song {
+            margin-left: 90%;
+            margin-top: 32%;
+            position: fixed;
+            height: 70px;
+            border-radius: 100%;
+        }
+
+        .imga {
+            border-radius: 100%;
+            height: 70px;
+        }
+
+        .cla {
+            color: white;
+            background-color: rgb(4, 77, 173);
+            border-radius: 5px;
+            border: none;
+            width: 100px;
+            height: 35px;
+        }
+
+        .select {
+            background-color: white;
+            border: 2px solid rgb(3, 61, 136);
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            color: rgb(3, 61, 136);
+            box-shadow: 5px 5px 15px rgb(217, 215, 215);
+        }
+
+        @media screen and (max-width: 768px) {
+            .james {
+                display: flex;
+                flex-direction: column-reverse;
+
+            }
+
+            .let {
+                display: none;
+            }
+
+            .jk {
+                max-width: 50%;
+            }
+
+            .down {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bus {
+                height: 250px;
+                margin-top: 20px;
+            }
+
+            .loans {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .second {
+                margin-top: 800px;
+            }
+
+            .song {
+                height: 40px;
+                margin-left: 85%;
+                margin-top: 50%;
+            }
+
+            .imga {
+                border-radius: 100%;
+                height: 50px;
+            }
+
+            .cla {
+                margin-left: 30%;
+            }
+
+            .select {
+                margin-top: -10px;
+                margin-left: 25%;
+            }
+        }
+
+        body {
+            background-color: rgb(226, 226, 226);
+        }
+
+        .yh {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .vt {
+            margin-left: 45px;
+            color: blue;
+        }
+
+        .brand {
+            color: white;
+            font-size: 30px;
+        }
+
+        .fa-brands {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .wire {
+            background-color: rgb(2, 64, 145);
+            padding-top: 70px;
+            padding-left: 20px;
+            height: 550px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+        }
+
+        .jk {
+            max-width: 100%;
+        }
+
+        .le {
+            max-width: 30%;
+            min-width: 30%;
+        }
+
+        .di {
+            font-size: 25px;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg yh" style="position: sticky; top:0px; background: white;">
+        <div class="container">
+            <img src="simplified.png" height="80px">
+            <button class="navbar-toggler" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="height: 20%;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link vt" href="swift.html" style="color: blue;">Swift</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vt" href="cac.html" style="color: blue;">CAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active vt" href="simplified.html"
+                            style="color: rgb(4, 185, 4)">Simplified</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vt" href="whatsapp.html" style="color: blue;">Whatsapp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vt" href="explore.html" style="color: blue;">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vt" href="download.html" style="color: blue;">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vt" href="whogohost.html" style="color: blue;">Whogohost</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vt" href="valuemax.html" style="color: blue;">Valuemax</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="song">
+        <img src="icon.png" class="imga">
+
+    </div>
+    <div class="wire">
+        <div>
+            <p style="color: white;"> Facilitating access to finance</p>
+            <h1 style="color: white; max-width: 60%;">Simple. Convenient. Reliable. Credible.
+                One-stop Credit Service
+            </h1>
+            <div class="brand">
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <p style="color: white; margin-top: 80px;">Compare credit terms quickly and for free</p>
+
+        <div class="loans">
+            <a href="#" style="text-decoration: none; color: black;">
+                <div class="bus">
+                    <h4>Business Loan</h4>
+                    <p>
+                        Fibre Local / National Loop & WAN Over 80 locations nationwde.
+                        The local loop within Lagos and to most locations in Nigeria is
+                        provided via the over 34,000 km of fibre rings round Nigeria.
+
+                    </p>
+                    <button class="select">Select</button>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none; color: black;">
+                <div class="bus">
+                    <h4>Personal Loan</h4>
+                    <p>
+                        Fibre Local / National Loop & WAN Over 80 locations nationwde.
+                        The local loop within Lagos and to most locations in Nigeria is
+                        provided via the over 34,000 km of fibre rings round Nigeria.
+
+                    </p>
+                    <button class="select">Select</button>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none; color: black;">
+                <div class="bus">
+                    <h4>Intervention Fund</h4>
+                    <p>
+                        Fibre Local / National Loop & WAN Over 80 locations nationwde.
+                        The local loop within Lagos and to most locations in Nigeria is
+                        provided via the over 34,000 km of fibre rings round Nigeria.
+
+                    </p>
+                    <button class="select">Select</button>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="second">
+        <div style="background-color: rgb(255, 255, 255); margin: 20px; border-radius: 10px;">
+            <div>
+                <h5
+                    style="background-color: rgb(5, 136, 217); height: 60px; color: white; padding-top: 15px; padding-left: 5px;">
+                    Loan Calculator</h5>
+            </div>
+            <div style="padding: 20px;">
+                <p>Funding Amount</p>
+                <input type="text" style="width: 50%; height: 35px;" id="lon" placeholder="100,000"> <br>
+                <div class="down">
+                    <div>
+                        <p>MarkUp (%)</p>
+                        <input type="text" style="height: 35px; width: 100%" value="10" id="lom" onkeyup="cha()">
+                    </div>
+                    <div>
+                        <p>Payment period</p>
+                        <input type="text" style=" height:35px; width:100%">
+                    </div>
+                </div>
+                <i style="color: rgb(3, 85, 117)">Your Markup ha been assumed as <span id="mercy">10</span>%</i>
+                <p>Fundind Period (monthly)</p>
+                <select class="form-select" aria-label=" select example" style="max-width: 50%;" id="stee">
+                    <option value="1">one month</option>
+                    <option value="2">two month</option>
+                    <option value="3">three month</option>
+                    <option value="4">four month</option>
+                    <option value="5">five month</option>
+                    <option value="6">six month</option>
+                </select> <br>
+                <p>Moritorim</p>
+                <input type="text" style=" height:35px; width:250px"> <br> <br> <br>
+                <button onclick="opeyemi()" class="cla">Calculate</button>
+                <p style="text-align: center; font-size: 20px;">Your repayment will be <span
+                        style="color: rgb(2, 111, 178);" id="fre">0</span> with <span style="color: rgb(2, 111, 178);"
+                        id="frt">0</span> scheduled number of payments <br>
+                    The total repayment on this funding will be <span style="color: rgb(2, 111, 178);" id="fry">0</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div style="margin-top: 100px;">
+        <div style="background-color: rgb(255, 255, 255); margin: 20px; border-radius: 10px;">
+            <div>
+                <h5
+                    style="background-color: rgb(3, 128, 205); height: 60px; color: white; padding-top: 15px; padding-left: 5px;">
+                    Morgage Calculator</h5>
+            </div>
+            <div style="padding: 20px;">
+                <p>Cost of Property</p>
+                <input type="text" style="width: 50%; height: 35px;" id="cost"> <br>
+                <p>Down Payment</p>
+                <input type="text" style="height: 35px; width: 50%" id="down" onkeyup="shey()">
+                <p>Estimated Loan amount</p>
+                <p  style="height: 35px; width: 50%; background-color: rgb(208, 206, 206); border: none"
+                    id="minu"> </p>
+                <div class="down">
+                    <div>
+                        <p>Annual Interest Rate (%)</p>
+                        <input type="text" style="height: 35px; width: 100%" id="rat">
+                    </div>
+                    <div>
+                        <p>Tenure(months) </p>
+                        <input type="text" style=" height:35px; width: 100%" id="year">
+                    </div>
+                </div> <br><br>
+                <button class="cla" onclick="solve()">Calculate</button>
+                <p style="text-align: center; font-size: 20px;">Your repayment will be <span
+                        style="color: rgb(2, 111, 178);" id="prof">0</span> with <span style="color: rgb(2, 111, 178);" id="nt">0</span>
+                    scheduled number of payments <br>
+                    The total repayment on this funding will be <span style="color: rgb(2, 111, 178);" id="win">0</span></p>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="james">
+                <div>
+                    <h4 class="let">LEGAL RIGHT</h4>
+                    © Simplified Credit.
+                    All Rights Reserved
+                    Developed by AGPARTNERSHIPS
+                </div>
+                <div class="jk">
+                    <h4>CONNECT WITH US</h4>
+                    <i class="fa fa-square-phone"></i>+234 706 5000 835 <i class="fa fa-square-phone"></i> +234 906 0059
+                    061
+                    <i class="fa-solid fa-envelope"></i>Support@simplifiedcredit.net
+
+                </div>
+                <div class="di">
+                    <h4> &nbsp; SOCIAL CONNECT</h4>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <p style="color: red; text-align: center;">CAVEAT: THIS IS STUDENT PROJECT SOLELY FOR LEARNING AND PRACTICE
+            PURPOSE, AND NOT AN ATTEMPT TO CLONE THE EXISTING PAGE</p>
+    </div>
+    <script>
+        function opeyemi() {
+            let firstMoney = Number(document.querySelector(`#lon`).value);
+            if (firstMoney == 0) {
+                alert(`insert a loan amount`)
+            }
+            let MarkUpPercentAge = Number(document.querySelector(`#lom`).value);
+            let MonthsYear = Number(document.querySelector(`#stee`).value);
+            let Percentage = MarkUpPercentAge / 100;
+            let TotalAmount = firstMoney * Percentage + firstMoney;
+            let jk = MonthsYear;
+            let Inter = TotalAmount / MonthsYear;
+            document.querySelector(`#fre`).innerHTML = `${Inter} naria`;
+            document.querySelector(`#frt`).innerHTML = `${jk}`;
+            document.querySelector(`#fry`).innerHTML = `${TotalAmount} naria`;
+        }
+        function cha() {
+            let MarkUpPercentAge = Number(document.querySelector(`#lom`).value);
+            let show = document.querySelector(`#mercy`)
+            show.innerHTML = `${MarkUpPercentAge}`
+        }
+        function shey() {
+            let costprice = Number(document.querySelector(`#cost`).value);
+            let Downprice = Number(document.querySelector(`#down`).value);
+            let ope = costprice - Downprice;
+            document.querySelector(`#minu`).textContent = ope
+        }
+        function solve() {
+            let costprice = Number(document.querySelector(`#cost`).value);
+            if (costprice == 0) {
+                alert(`Cost of price should be greater than 0`)
+            }
+            let Downprice = Number(document.querySelector(`#down`).value);
+            if (Downprice > costprice || Downprice == 0) {
+                alert(`Down payment should be positive and less than the cost of property 0`)
+            }
+            let rati = Number(document.querySelector(`#rat`).value);
+            if(rati==0){
+                alert("Annual interest should be between 1 and 100")
+            }
+            let monti = Number(document.querySelector(`#year`).value);;
+            if(monti==0 || monti>25){
+                alert('Tenure should be between 1 and 25 months')
+            }
+            let percent = rati/100;
+            let total = costprice*percent+costprice;
+            let man = total/monti
+            document.querySelector(`#win`).innerHTML=`${total} Naria`;
+            document.querySelector(`#nt`).innerHTML=`${monti}`;
+            document.querySelector(`#prof`).innerHTML=`${man} Naria`
+
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+body{
+    background: rgb(252, 252, 252);
+}
+.re{
+    background-color: rgb(45, 45, 81);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.bread{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.enjoy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+    color: rgb(27, 27, 54);
+}
+.joy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+    color: rgb(27, 27, 54); 
+}
+.nit{
+    margin-left: 40px;
+}
+.bus{
+    height: 650px;
+    width: 650px;
+}
+.notin{
+    margin-left: 60px; color: gray; width: 500px;
+}
+.air{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.load{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.soft{
+    width: 450px;
+}
+.pen{
+    width: 600px;
+}
+.pa{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.loan{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.soft{
+    margin-left: 50px;
+}
+.discuss{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.ion{
+    width: 270px;
+}
+.get{
+    background: goldenrod;
+    border-radius: 40px;
+    width: 200px;
+    height: 60px;
+    border: 3px solid white;
+    color: white;
+}
+.get:hover{
+    background: white;
+    color: goldenrod;
+}
+.go{
+    padding: 40px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background: goldenrod;
+}
+.title{
+    text-decoration: none;
+    color: rgb(76, 76, 92);
+}
+.trick{
+    text-align: end;
+    color: rgb(98, 98, 114);
+}
+.title:hover{
+    color: gold;
+}
+@media screen and (max-width: 1000px) {
+    .enjoy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .joy{
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
+    }
+    .pen{
+        margin-left: 20px;
+    }
+    .bus{
+        height: 600px;
+        width: 700px;
+        margin-left: 50px;
+    }
+    .offcanvas-body{
+        background-color: rgb(13, 13, 57);
+     }
+     .fa-angle-down{
+        display: none;
+     }
+     .offcanvas-header{
+        background: rgb(13, 13, 57) ;
+     }
+     .discuss{
+        display: flex;
+        flex-direction: column;
+     }
+     .ion{
+        width: 800px;
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .discuss{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .ion{
+        width: 350px;
+        text-align: center;
+    }
+    .soft{
+        width: 250px;
+    }
+    .pen{
+        width: 350px;
+        margin-left: 0px;
+    }
+    .go{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trick{
+        text-align: center;
+    }
+.notin{
+    width: 250px;
+}
+ .offcanvas-body{
+    background-color: rgb(13, 13, 57);
+ }
+ .fa-angle-down{
+    display: none;
+ }
+ .offcanvas-header{
+    background: rgb(13, 13, 57) ;
+ }
+ .bus{
+    height: 420px;
+    width: 350px;
+    margin-left: 0px;
+ }
+ .enjoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .joy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10px;
+ }
+ .air{
+    display: flex; flex-direction: row; justify-content: space-around;
+ }
+ .load{
+    font-size: 20px; margin-left: 30px;
+ }
+
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: rgb(22, 22, 102);
+        }
+        .gt{
+            background: rgb(0, 76, 255); border: none; width: 40%; height: 40px; color: white; border-radius: 2px; font-size: 13px;
+        }
+        .all{
+            width: 65%;
+            border-radius: 10px; 
+            background: white; 
+            margin-top: 30px;
+            margin-bottom: 50px;
+            
+        }
+        .dash{
+            display: flex; flex-direction: row; justify-content: space-around; 
+            width: 100%;
+        }
+        .p{
+            color: rgb(99, 98, 98); font-size: 15px;
+        }
+        .hr{
+            width: 30%
+        }
+        .form-switch{
+          box-shadow: 3px 3px 12px 3px rgb(189, 186, 186);
+          width: 50%;
+          border-radius: 5px;
+          padding: 30px;
+        }
+        #flexSwitchCheckChecked{
+          margin-left: 0px;
+        }
+        .song{
+    margin-left: 92%;
+    margin-top: 32%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+        @media screen and (max-width: 1000px) {
+            .gt{
+                width: 70%;
+            }
+            .all{
+                width: 70%
+            }
+            .hr{
+                width: 20%;
+            }
+
+        }
+        @media screen and (max-width: 768px) {
+            .all{
+                width: 95%
+            }
+            .dash{
+                width: 80%;
+                margin-left: 40px;
+            }
+            .hr{
+                width: 15%;
+            }
+            .p{
+                font-size: 14px;
+            }
+            .form-switch{
+              width: 95%
+            }
+            .der{
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+            }
+            .song{
+              margin-left: 80%;
+              margin-top: 320px;
+              height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mx-auto p-2" style="width: 300px; margin-top: 30px;">
+        <img src="ghost.png" height="70px"> <br>
+        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" style="text-align: center;">
+          <li class="nav-item dropdown">
+              <a class="nav-link active vt" style="color: rgb(255, 255, 255);" data-bs-toggle="dropdown"
+                  >other projct <i class="fa fa-angle-down"></i> </a>
+              <ul class="dropdown-menu"
+                  style="background-color: rgb(15, 6, 108); color: white;">
+                  <li><a class="dropdown-item" href="swift.html" style="color: white;">Swift</a></li>
+                  <li><a class="dropdown-item" href="cac.html" style="color: white;">CAC</a></li>
+                  <li><a class="dropdown-item" href="explore.html" style="color: white;">Explore</a></li>
+                  <li><a class="dropdown-item" href="simplified.html" style="color: white;">Simplified</a></li>
+                  <li><a class="dropdown-item" href="valuemax.html" style="color: white;">Valuemax</a></li>
+                  <li><a class="dropdown-item" href="whatsapp.html" style="color: white;">Whatsapp</a></li>
+                  <li><a class="dropdown-item" href="download.html" style="color: white;">Download</a></li>
+                  <li><a class="dropdown-item" href="whogohost.html" style="color: white;">Whogohost</a></li>
+              </ul>
+          </li>
+        </ul> 
+    </div>
+    <div class="song">
+      <img src="ty.png"  style="border-radius: 20px;" height="60px">
+    </div>
+     
+    
+
+    <div class="all mx-auto p-2">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
+            <p style="color: rgb(98, 97, 97); font-size: 13px;">Use social account (optional)</p>
+            <button class="gt" ><i  style="color: white;" class="fa-brands fa-facebook"></i> Sign Up with Facebook</button>
+        </div>
+        <div class="dash" >
+            <div class="hr">
+                <hr>
+            </div>
+            <p class="p">or fill the form below</p>
+            <div class="hr">
+                <hr>
+            </div>
+    </div>
+
+    <form id="form"> 
+      <h6 style="font-size: 20px;">Personal Information</h6>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+        <label style="color: grey;">First Name <span style="color: grey;">*</span></label> <br> <br>
+        <input type="text" required class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <label style="color: grey;">Last Name <span style="color: grey;">*</span></label> <br> <br>
+            <input type="text"  name="ast" class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+      </div>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <label style="color: grey;">Email Address<span style="color: grey;">*</span></label> <br> <br>
+            <input type="email" required name="em" class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <label style="color: grey;">Phone Number <span style="color: grey;">*</span></label> <br> <br>
+            <input type="text" required name="pone" class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+      </div> <br> <br>
+      <h6 style="font-size: 20px;">Bill Address</h6>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <label style="color: grey;">Company name (Optional) <span style="color: grey;">*</span></label> <br> <br>
+            <input type="text" required class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <label style="color: grey;">Street Address <span style="color: grey;">*</span></label> <br> <br>
+            <input type="text" required name="strt" class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+      </div>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <label style="color: grey;">Street Address 2 (Optional)<span style="color: grey;">*</span></label> <br> <br>
+            <input type="text" required class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <label style="color: grey;">City <span style="color: grey;">*</span></label> <br> <br>
+            <input type="text" required name="Kano" class="form-control" id="floatingInputGrid" style="height: 50px;">
+          </div>
+        </div>
+      </div> <br>
+      <div class="row g-3">
+        <div class="col-sm-3">
+            <label style="color: grey;">State <span style="color: grey;">*</span></label> 
+          <input type="text" required name="kogi" class="form-control" style="height: 50px;" >
+        </div>
+        <div class="col-sm-3">
+            <label style="color: grey;">Postcard <span style="color: grey;">*</span></label> 
+          <input type="text" required name="cardi" class="form-control" style="height: 50px;">
+        </div>
+        <div class="col-sm">
+            <label style="color: grey;">Country <span style="color: grey;">*</span></label>
+            <select  class="form-control" style="height: 50px;">
+                <option selected>Nigeria</option>
+                <option value="1">Benin Republic</option>
+                <option value="2">Cameroon</option>
+                <option value="3">Canada</option>
+                <option >Ghana</option>
+                <option value="1">Niger</option>
+                <option value="2">Rwanda</option>
+                <option value="3">Uganda</option>
+                <option >United States</option>
+                <option value="1">United Kingdom</option>
+                <option value="2">Mali</option>
+                <option value="3">Morocco</option>
+            </select>
+        </div>
+      </div>
+      <h6 style="font-size: 20px; margin-top: 40px;">Additional Information</h6>
+      <p><i><span style="color: grey; font-size: 12px;">(required fields are marked with *)</span></i></p>
+      <div class="row g-2">
+            <div class="col-md">
+                <label style="color: grey;">Where did you hear about us ? (Optional) <span style="color: grey;">*</span></label>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid">
+                    <option selected>None</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Google</option>
+                    <option value="3">Telegram</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md">
+                <label style="color: grey;">Customer Category <span style="color: grey;">*</span></label>
+            <div class="form-floating">
+                <select name="customer" class="form-select" id="floatingSelectGrid" required>
+                <option  value="-1"></option>
+                <option value="1">Web Developer</option>
+                <option value="2">Web designer</option>
+                <option value="3">NGO</option>
+                </select>
+            </div>
+            <p style="color: grey; font-size: 12px;">Choose the category that best describes you to enable us serve you better</p>
+            </div>
+      </div>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                <span style="color: rgb(63, 61, 61);">Consest to share personal data *</span>
+            </label>
+            </div>
+          </div>
+          <p style="color: grey; margin-top: 30px; font-size: 12px;">I consent to the processing of my personal data within or outside my jurisdiction</p>
+        </div>
+        
+        <div class="col-md">
+            <label style="color: rgb(62, 59, 59);"> Security Question *</label>
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid">
+              <option selected>What primary School did you attend</option>
+              <option value="1">Your school result</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <p style="color: grey; font-size: 12px;">Choose your security question to enable us verify you when you contact us</p>
+        </div>
+      </div>
+      <div class="row g-2">
+        <div class="col-md">
+            <label>Security Question Answer</label>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGrid">
+          </div>
+          <p style="color: gray; font-size: 12px;">Enter the answer to the security question you chose. We would ask for this to verify your identity when you contact us</p>
+        </div>
+        <div class="col-md">
+            <label >Choose Currency *</label>
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid">
+              <option selected>NGN</option>
+              <option value="1">USD</option>
+              <option value="2">KES</option>
+              <option value="3">GHS</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <h6 style="font-size: 20px; margin-top: 40px;">Account Security</h6>
+      <div class="row g-2">
+        <div class="col-md">
+          <label>Password *</label>
+          <div class="form-floating">
+            <input  required  type="text" class="form-control word" id="floatingInputGrid">
+          </div>
+        </div>
+        <div class="col-md">
+          <label>Confirm Password *</label>
+          <div class="form-floating">
+            <input name="corn" type="text" class="form-control com" id="floatingInputGrid">
+          </div>
+        </div>
+      </div>
+      <h6 style="font-size: 20px; margin-top: 40px;">Join our mailing list</h6>
+      <p style="color: gray; font-size: 15px;">We would like to send you occasional news, information and special offers by email. To join our mailing list, simply tick the box below. You can unsubscribe at any time.</p>
+      <div class="form-check form-switch">
+        <div class="row der">
+          <div class="col-sm-6">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Received Emails</label>
+          </div>
+          <div class="col-sm-6">
+            <input required class="form-check-input" type="checkbox" style="width: 40px; height: 20px;" role="switch" id="flexSwitchCheckChecked" checked>
+          </div>
+        </div>
+      </div>
+      <div class="form-check" style="margin-top: 30px; font-size: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          I have read and agree to the <a href="#" style="color: rgb(0, 102, 255); text-decoration: none;">Terms And Conditions</a> <span  style="color: grey;">*</span> 
+        </label>
+      </div>
+      <button style="color: white; width: 90%; height: 55px; background-color: rgb(0, 21, 255); border: none; border-radius: 5px; text-align: center; margin-left: 30px ; margin-top: 40px;" onclick="validate()" type="submit"><h6>Register</h6></button> <hr>
+  </form>  
+      <div style="margin-top: 30px; text-align: center;">
+        <p>Already registered with us? <a href="#" style="color: rgb(0, 102, 255); text-decoration: none;" > Sign In </a> or <a href="#" style="color: rgb(0, 102, 255); text-decoration: none;"> Reset Password </a></p>
+      </div>
+    </div>
+  </nav>   
+  
+  <div>
+    <p style="color: red; text-align: center;">CAVEAT: THIS IS STUDENT PROJECT SOLELY FOR LEARNING AND PRACTICE PURPOSE, AND NOT AN ATTEMPT TO CLONE THE EXISTING PAGE</p>
+</div>
+ <script>
+   let pass = document.querySelector(".word").value;
+   let comfirm =document.querySelector(".com").value;
+   let ass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&])[a-zA-Z0-9!@#\$%\^&]{5,15}$/;
+   let isValid= false
+   function validate(){
+    if(!pass.match(ass)){
+      isValid= false;
+      form.focus()
+   }
+   else{
+    isValid=true
+   }
+   if(pass!==comfirm){
+    isValid= false;
+    form.focus()
+   }
+   else{
+    isValid=true
+   }
+   if(isValid){
+    form.submit();
+   }
+  }
+ </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+</body>
+</html>
